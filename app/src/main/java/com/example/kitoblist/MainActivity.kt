@@ -26,15 +26,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("kitob", kitob)
             startActivity(intent)
 
-
         }
-
-
     }
-
-
-
-
     fun kitobQosh(){
         kitoblar.add(Kitob("Понедельник начинается в субботу", R.drawable.pon_nach_v_sub,
             "братья Стругацкие",
@@ -55,7 +48,6 @@ class MainActivity : AppCompatActivity() {
                 " Джон Манглс — в поисках потерпевшего кораблекрушение капитана Гранта" +
                 " путешествуют вокруг Земли по Южной Америке через Патагонию, по Австралии" +
                 " и Новой Зеландии, строго придерживаясь 37-й параллели южной широты."))
-
 
     }
 }
