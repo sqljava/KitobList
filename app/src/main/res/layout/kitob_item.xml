@@ -46,9 +46,28 @@
                 android:layout_marginTop="10dp"
                 />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/emptylove"
+                    android:layout_marginEnd="50dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
         </LinearLayout>
-
 
 
 

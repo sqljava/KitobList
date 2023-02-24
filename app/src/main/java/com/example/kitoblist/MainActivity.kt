@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+
+
     }
     fun kitobQosh(){
         kitoblar.add(Kitob("Понедельник начинается в субботу", R.drawable.pon_nach_v_sub,

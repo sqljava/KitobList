@@ -24,6 +24,22 @@ class KitobAdapter(context : Context, var kitoblar: MutableList<Kitob>) :
         itemKitob.name.text = kitob.nomi
         itemKitob.avtor.text = kitob.avtor
 
+        if (!kitoblar[position].liked){
+            itemKitob.like.setImageResource(R.drawable.emptylove)
+        }else{
+            itemKitob.like.setImageResource(R.drawable.love)
+        }
+
+        itemKitob.like.setOnClickListener {
+            if (kitoblar[position].liked){
+                itemKitob.like.setImageResource(R.drawable.emptylove)
+                kitoblar[position].liked = false
+            }else{
+                itemKitob.like.setImageResource(R.drawable.love)
+                kitoblar[position].liked = true
+            }
+        }
+
 
         return itemKitob.root
     }
