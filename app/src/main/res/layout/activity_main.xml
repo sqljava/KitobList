@@ -25,7 +25,15 @@
             android:layout_marginVertical="5dp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Kitoblar" />
+            android:text="Книги" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="избранные"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#F44336"/>
     </LinearLayout>
 
     <ListView
